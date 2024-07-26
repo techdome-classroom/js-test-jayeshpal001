@@ -3,18 +3,14 @@ const getTotalIsles = function (grid) {
 
   let count = 0;
 
-  // Function to perform DFS
   const dfs = (grid, i, j) => {
-    // Base case for out of bounds or water cell
     if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] === 'W') {
       return;
     }
 
-    // Mark the cell as visited by changing it to 'W'
     grid[i][j] = 'W';
 
-    // Explore all 4 directions
-    dfs(grid, i + 1, j); // down
+    dfs(grid, i + 1, j); 
     dfs(grid, i - 1, j); // up
     dfs(grid, i, j + 1); // right
     dfs(grid, i, j - 1); // left
