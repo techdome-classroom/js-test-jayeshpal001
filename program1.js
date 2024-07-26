@@ -11,7 +11,7 @@ const getTotalIsles = function (grid) {
     grid[i][j] = 'W';
 
     dfs(grid, i + 1, j); 
-    dfs(grid, i - 1, j); // up
+    dfs(grid, i - 1, j); 
     dfs(grid, i, j + 1); // right
     dfs(grid, i, j - 1); // left
   };
