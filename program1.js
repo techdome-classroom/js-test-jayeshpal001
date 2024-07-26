@@ -3,7 +3,7 @@ const getTotalIsles = function (grid) {
 
   let count = 0;
 
-  // Fu
+  // Function to perform DFS
   const dfs = (grid, i, j) => {
     // Base case for out of bounds or water cell
     if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] === 'W') {
