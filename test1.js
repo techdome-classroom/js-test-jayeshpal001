@@ -1,4 +1,3 @@
-// test.js
 const getTotalIsles = require('./program1');
 const assert = require("assert");
 
